@@ -988,6 +988,12 @@ line-height: 16px;
       .products-text {
         margin-top: 64px;
     }
+    .products-cards {
+        justify-content: center;
+    }
+    .products-card {
+       width: 359px;
+    }
     .nav-content {
         justify-content: center;
     }
@@ -1095,7 +1101,6 @@ line-height: 16px;
         gap: 40px;
     }
     .products-cards {
-        justify-content: center;
         margin-right: 0;
     }
   }

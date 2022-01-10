@@ -653,6 +653,11 @@ input, textarea, select {
     background-position: center;
     background-size: cover;
   }
+  .categories-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .products {
@@ -1994,6 +1999,14 @@ input, textarea, select {
   .products-text {
     margin-top: 64px;
   }
+  .products-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products-card {
+    width: 359px;
+  }
   .nav-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2108,9 +2121,6 @@ input, textarea, select {
     gap: 40px;
   }
   .products-cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-right: 0;
   }
 }
