@@ -1,0 +1,135 @@
+.header {
+
+    background-color: #222222;
+    color: white;
+    padding: 18px 0;
+    &--right {
+    display: flex;
+    align-items: flex-end ;
+}
+}
+.header-menu {
+    display: none;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    top: 55px;
+    left: 100%;
+    width: 232px;
+    z-index: 10;
+    position: absolute;
+    height: 765px;
+    background-color: #fff;
+    &-item {
+        list-style-type: none;
+        margin-left: 33px;
+    }
+    &-subtitle {
+        display: block;
+        padding-top: 11px;
+        margin-left: 21px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+    &-title {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+
+    }
+    &-name {
+        margin-bottom: 24px;
+        margin-top: 37px;
+        margin-left: 34px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+    &-close {
+        right: 17px !important;
+        top: 16px !important;
+    }
+}
+.header-burger-menu:hover .header-menu {
+    display: block;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-btn-icon {
+    transition: 0.3s
+}
+.header-btn:hover .header-btn-icon {
+fill: $main-color;
+transform: rotateY(180deg);
+}
+.header-logo-link {
+    margin-right: 40px;
+}
+
+.header-burger-link {
+    margin-right: 33px;
+}
+.header--right {
+    position: relative;
+}
+
+.header-person-link {
+    margin-right: 33px;
+}
+.header-cart-link {
+    position: relative;
+}
+.cart-number-counter {
+    position: absolute;
+    bottom: 18px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: $main-color;
+}
+@media (max-width: 1625px) {
+    .header-menu {
+        left: 0;
+    }
+}
+@media (max-width: 1305px) {
+    .header-menu {
+        left: -30%;
+    }
+}
+@media (max-width: 1200px) {
+    .header-menu {
+        left: 0;
+    }
+}
+@media (max-width: 905px) {
+    .header-menu {
+        left: -35%;
+    }
+}
+
+  /*mobile*/
+  @media (max-width: 797px) {
+    .header--right-icon {
+        display: none;
+    }
+    .header-burger-link {
+        margin-right: 0;
+    }
+    .header-menu {
+        left: -200px;
+    }
+  }

@@ -1,0 +1,115 @@
+.categories {
+    padding-top: 65px;
+
+}
+
+.categories-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-category {
+    text-align: center;
+    background-color: #c4c4c4;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+    &:hover .category-text-promo {
+        font-size: 20px;
+    }
+    &:hover .category-text-name {
+        font-size: 28px;
+    }
+}
+
+.card-category-women {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/category-women.jpg);
+}
+
+.card-category-men {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/category-men.jpg);
+}
+
+.card-category-kids {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/category-kids.jpg);
+}
+
+.card-category-accesories {
+    margin-top: 30px;
+    background-image: url(../img/category-accesories.jpg);
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.category-text-promo {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.category-text-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+@media (max-width: 1200px) {
+    .card-category {
+        text-align: center;
+        background-color: #c4c4c4;
+        width: 232px;
+        height: 167px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-category-accesories {
+        margin-top: 30px;
+        background-image: url(../img/category-accesories.jpg);
+        width: 100%;
+        height: 116px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+  /*mobile*/
+  @media (max-width: 797px) {
+    .card-category {
+        text-align: center;
+        background-color: #c4c4c4;
+        width: 343px;
+        height: 247px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    .card-category-accesories {
+        margin-top: 0px;
+        background-image: url(../img/category-accesories.jpg);
+        width: 100%;
+        height: 111px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+  }

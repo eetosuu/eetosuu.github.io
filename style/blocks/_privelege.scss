@@ -1,0 +1,79 @@
+.privilege {
+    background-color: #222224;
+}
+
+.privilege-info {
+    padding-top: 103px;
+    padding-bottom: 103px;
+}
+
+.privilege-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.privilege-delivery {
+    background-position-x: 50%;
+    height: 134px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-delivery.svg);
+}
+
+.privilege-sales {
+    background-position-x: 50%;
+    height: 134px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-sales.svg);
+
+}
+
+.privilege-assurance {
+    background-position-x: 50%;
+    height: 134px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-assurance.svg);
+
+
+}
+
+.privilege-title {
+    margin-top: 60px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.privilege-text {
+    text-align: center;
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 104px;
+}
+@media (max-width: 1200px) {
+    .privilege-assurance, .privilege-delivery, .privilege-sales {
+        padding: 0 214px;
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .privilege-assurance {
+        margin-bottom: 0;
+    }
+    
+}
+
+  /*mobile*/
+  @media (max-width: 797px) {
+    .privilege-assurance, .privilege-delivery, .privilege-sales {
+        padding: 0 24px;
+    }
+  }
