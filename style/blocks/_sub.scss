@@ -1,0 +1,129 @@
+.subscribe-info {
+    background-color: #D73C3C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 448px;
+    background-image: url(../img/photo-subscribe.jpg); 
+}
+
+.subscribe-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 448px;
+}
+
+.review {
+    align-items: center;
+    width: 360px;
+    height: 225px;
+}
+
+.review-img {
+    height: 96px;
+    width: 96px;
+}
+
+.review-text {
+    margin-top: 30px;
+    font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #222224;
+}
+
+.subscribe-mailing {
+margin-right: 100px;
+
+}
+
+.subscribe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.subscribe-title-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-subtitle-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-form {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form-field {
+    width: 256px;
+    padding: 15px;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 20px 0 0 20px;
+&::placeholder {
+    color: #222224;
+}
+}
+
+
+.subscribe-form-btn {
+    padding: 15px 21px;
+    border: none;
+    color: #FFFFFF;
+    background-color: $main-color;
+    border-radius: 0 20px 20px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+background-color: #E05C6E;
+    }
+}
+@media (max-width: 1200px) {
+    .subscribe-content {
+        height: auto;
+        padding-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 140px;
+    }
+    .review {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .subscribe-mailing {
+        margin-right: 0px;
+    }
+    .subscribe-info {
+        background-position: center bottom;
+        background-size: cover;
+        min-height: 448px;
+        background-image: url(../img/photo-subscribe-small.png);
+    }
+}
+
+  /*mobile*/
+  @media (max-width: 797px) {
+    .subscribe-content {
+        padding-bottom: 110px;
+    }
+    
+  }
